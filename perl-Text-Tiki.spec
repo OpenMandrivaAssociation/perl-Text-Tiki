@@ -1,7 +1,7 @@
 %define module	Text-Tiki
 %define name	perl-%{module}
 %define version	0.73
-%define release	%mkrel 2
+%define release	%mkrel 3
 
 Name:		%{name}
 Version:	%{version}
@@ -35,6 +35,8 @@ design goals:
 %{__perl} Makefile.PL INSTALLDIRS=vendor <<EOF
 EOF
 %make
+
+%check
 %make test
 
 %install
