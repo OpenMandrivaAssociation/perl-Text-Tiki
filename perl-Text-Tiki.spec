@@ -1,7 +1,7 @@
 %define module	Text-Tiki
 %define name	perl-%{module}
 %define version	0.73
-%define release	%mkrel 3
+%define release	%mkrel 5
 
 Name:		%{name}
 Version:	%{version}
