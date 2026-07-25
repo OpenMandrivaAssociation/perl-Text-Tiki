@@ -2,14 +2,14 @@
 %define upstream_version 0.73
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	5
+Version:	%{upstream_version}
+Release:	6
 
 Summary:	TikiText - Text Formatting Engine
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Text/%{upstream_name}-%{upstream_version}.tar.bz2
+Url:		https://metacpan.org/dist/Text-Tiki
+Source0:	https://cpan.metacpan.org/authors/id/T/TI/TIMA/Text-Tiki-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
