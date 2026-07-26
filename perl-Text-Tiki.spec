@@ -1,15 +1,13 @@
 %define upstream_name	 Text-Tiki
-%define upstream_version 0.73
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	6
+Version:	0.73
+Release:	7
 
 Summary:	TikiText - Text Formatting Engine
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://metacpan.org/dist/Text-Tiki
-Source0:	https://cpan.metacpan.org/authors/id/T/TI/TIMA/Text-Tiki-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/T/TI/TIMA/Text-Tiki-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -29,7 +27,7 @@ design goals:
   dive in.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor <<EOF
@@ -54,9 +52,7 @@ EOF
 
 * Tue Aug 04 2009 JÃ©rÃ´me Quelin <jquelin@mandriva.org> 0.730.0-1mdv2010.0
 + Revision: 409304
-- rebuild using %%perl_convert_version
-
-* Wed Jul 23 2008 Thierry Vignaud <tv@mandriva.org> 0.73-5mdv2009.0
+- rebuild using %0.73 Wed Jul 23 2008 Thierry Vignaud <tv@mandriva.org> 0.73-5mdv2009.0
 + Revision: 242059
 - rebuild
 - kill re-definition of %%buildroot on Pixel's request
