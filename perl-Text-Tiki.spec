@@ -2,7 +2,7 @@
 %define upstream_version 0.73
 Name:		perl-%{upstream_name}
 Version:	0.73
-Release:	2
+Release:	3
 
 Summary:	TikiText - Text Formatting Engine
 License:	GPL+ or Artistic
@@ -38,6 +38,7 @@ EOF
 %check
 # soft: do not fail package on test failures
 set +e
+make test || :
 %make test || :
 
 %install
